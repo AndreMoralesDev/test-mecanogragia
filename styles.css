@@ -1,0 +1,189 @@
+/* 
+/////////////////////////////////////////////////
+        RESETEO Y ESTILOS GENERALES
+/////////////////////////////////////////////////
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Raleway', sans-serif;
+    --primary-color: #397275;
+    --primary-color-dark: #2e5b5d;
+    --font-size-big: clamp(3rem, 2.8rem + 2.5vw, 6rem);
+    --font-size-normal: clamp(1.6rem, 1.4rem + 1.5vw, 2.5rem);
+    --font-size-small: clamp(.8rem, .8rem + 1vw, 2rem);
+    --white: #fff;
+    --transparent: #fff2;
+    --transparent-hover: #fff3;
+    --green: #21d34e;
+    --red: #c51313;
+}
+
+html {
+    font-family: var(--font-family);
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    max-width: 108rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-left: .2rem solid var(--primary-color-dark);
+    border-right: .2rem solid var(--primary-color-dark);
+    padding: 1rem;
+}
+
+
+/* 
+/////////////////////////////////////////////////
+                  CONTADOR
+/////////////////////////////////////////////////
+*/
+
+
+.contador-palabras-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-small)
+}
+
+.contador {
+    font-size: var(--font-size-big);
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+
+/* 
+/////////////////////////////////////////////////
+                TEXTO MÁQUINA
+/////////////////////////////////////////////////
+*/
+
+
+.texto-maquina {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: var(--transparent);
+    width: 80%;
+    padding: 1rem;
+    align-items: center;
+    color: var(--white);
+    font-size: var(--font-size-normal);
+    border: .1rem solid var(--white);
+    font-weight: 600;
+}
+
+
+/* 
+/////////////////////////////////////////////////
+         TEXTO USUARIO Y CONTROLES
+/////////////////////////////////////////////////
+*/
+
+
+.contenedor-texto-usuario {
+    width: 80%;
+    font-size: var(--font-size-normal);
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.texto-usuario {
+    width: 65%;
+    outline: none;
+    border: none;
+    border: .1rem solid var(--white);
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: var(--white);
+    background-color: var(--transparent);
+}
+
+.palabra-correcta {
+    color: var(--green);
+}
+
+.palabra-incorrecta {
+    color: var(--red);
+}
+
+.btn-resetear {
+    border: .1rem solid var(--white);
+    cursor: pointer;
+    background-color: var(--transparent);
+    width: 20%;
+    min-width: max-content;
+    padding: 0 1rem;
+    outline: none;
+}
+
+.btn-resetear:hover {
+    background-color: var(--transparent-hover);
+}
+
+.icono-reseteo {
+    color: var(--white);
+    font-size: var(--font-size-normal);
+    pointer-events: none;
+}
+
+.tiempo {
+    font-size: var(--font-size-normal);
+    font-family: sans-serif;
+    width: 10%;
+    border: .1rem solid var(--white);
+    background-color: var(--transparent);
+    min-width: max-content;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+
+/* 
+/////////////////////////////////////////////////
+                    PPM
+/////////////////////////////////////////////////
+*/
+
+
+.ppm-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary-color-dark);
+    font-family: var(--font-family);
+    font-size: var(--font-size-normal);
+    font-weight: 700;
+    display: none;
+}
+
+.ppm {
+    font-size: var(--font-size-big);
+    font-weight: 700;
+    font-family: sans-serif;
+}

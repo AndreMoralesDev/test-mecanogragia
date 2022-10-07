@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway:ital,wght@0,300;0,500;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mecanografía</title>
+</head>
+
+<body>
+    <div class="contador-palabras-contenedor">
+        <span id="contador" class="contador">0</span>
+        <span>Palabras correctas</span>
+    </div>
+    <p id="texto-maquina" class="texto-maquina"></p>
+    <div class="contenedor-texto-usuario">
+        <input type="text" id="texto-usuario" autocomplete="off" class="texto-usuario"></input>
+        <p id="tiempo" class="tiempo">15</p>
+        <button class="btn-resetear" id="btn-resetear">
+            <ion-icon name="refresh-outline" class="icono-reseteo"></ion-icon>
+        </button>
+    </div>
+    <div class="ppm-contenedor">
+        <span id="ppm" class="ppm"></span>
+        <span>PPM</span>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
