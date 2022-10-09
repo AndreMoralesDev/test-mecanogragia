@@ -64,7 +64,8 @@ const tiempoPartida = (reseteo=false) => {
 const validarPalabra  = (e) => {
     if (primerLetra === 0) tiempoPartida();
     primerLetra++;
-    if ( e.keyCode === 32 || e.key === " ") {
+    const letra = e.keyCode || e.which
+    if (letra === 32) {
         const palabra = textoMaquinaArray()[i];
         const usuario = $textoUsuario.value.trim();
         if (usuario.length != 0 && usuario === palabra.textContent){
